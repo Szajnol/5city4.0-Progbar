@@ -1,0 +1,90 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+
+:root {
+  --primaryColor: #060606;
+  --health: #CC245C;
+  --hunger: #E79557;
+  --thirst: #5C7DF2;
+  --voice: #542398;
+  --dev: a;
+  --fuel: #EBFF6A;
+}
+
+body{
+  overflow: hidden;
+  font-family: Poppins, sans-serif;
+  color: white;
+  font-size: 1vw;
+}
+
+
+
+.progressbar-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 5vw;
+  min-width: 18vw;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10vw;
+  background: linear-gradient(180deg, #000000 0%, hsla(280, 49%, 23%, 0.9) 99%);
+  border-radius: 0.3vw;
+  border: #8D3AFE solid 0.2vw;
+  font-weight: bold;
+  font-size: 0.75vw;
+}
+
+.data{
+  display: flex;
+  gap: 1vw;
+  width: 100%;
+  height: 40%;
+}
+
+.line{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.progress{
+  width: 90%;
+  height: 0.3vw;
+  background: rgba(255, 255, 255, 0.092);
+  border-radius: 0.3vw;
+}
+
+.fill{
+  height: 100%;
+  width: 50%;
+  background: #8D3AFE;
+  border-radius: 0.3vw;
+  box-shadow: 0px 0px 1vw 0.1vw #8D3AFE;
+}
+
+.fa-regular{
+  color: #8D3AFE;
+  font-size: 1vw;
+  margin-left: 1vw;
+  margin-top: 0.2vw;
+}
+
+.time{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3vw;
+  height: 1.5vw;
+  background: #8D3AFE;
+  font-size: 0.7vw;
+  border-radius: 0.2vw;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: 1vw;
+}
+
