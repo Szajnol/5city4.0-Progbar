@@ -5,9 +5,16 @@ Progressbar do Fivem inspirowany polskimm serwerem Fivecity 4.0
 
 ## FAQ
 
-#### Co potrzebuje żeby skrypt działał?
+#### Export
 
-Dosłownie nic
+```lua
+RegisterCommand('testProgress', function()
+    local progbar = exports['shinyx-progress']:startProgbar()
+    if progbar then
+        print('test')
+    end
+end)
+```
 
 #### Nie działa mi skrypt co zrobić
 
