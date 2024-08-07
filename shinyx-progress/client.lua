@@ -18,7 +18,7 @@ end
 exports('startProgress', startProgress)
 
 RegisterCommand('testProgress', function()
-    local progbar = exports['shinyx-progress']:startProgbar()
+    local progbar = exports['shinyx-progress']:startProgress('test')
     if progbar then
         print('test')
     end
