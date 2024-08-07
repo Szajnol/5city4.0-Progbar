@@ -9,7 +9,7 @@ Progressbar do Fivem inspirowany polskimm serwerem Fivecity 4.0
 
 ```lua
 RegisterCommand('testProgress', function()
-    local progbar = exports['shinyx-progress']:startProgbar()
+    local progbar = exports['shinyx-progress']:startProgress(5000, 'Testowe')
     if progbar then
         print('test')
     end
