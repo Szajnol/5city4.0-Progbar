@@ -1,9 +1,9 @@
 local ProgbarActive = false
 
-function startProgress()
+function startProgress(duration, desc)
     if ProgbarActive then return nil end
     ProgbarActive = true
-    SendNUIMessage({action = "startProgressbar"})
+    SendNUIMessage({action = "startProgressbar", duration = duration, desc = desc})
     local promise = promise.new()
 
     RegisterNUICallback('finish', function(data, cb)
@@ -18,7 +18,7 @@ end
 exports('startProgress', startProgress)
 
 RegisterCommand('testProgress', function()
-    local progbar = exports['shinyx-progress']:startProgress('test')
+    local progbar = exports['shinyx-progress']:startProgress(5000, test)
     if progbar then
         print('test')
     end
